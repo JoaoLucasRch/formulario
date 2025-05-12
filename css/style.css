@@ -1,0 +1,17 @@
+.esquerda{
+    width: 50%;
+    padding: 20px;
+}
+
+.direita{
+    width: 50%;
+    background-color: #FEE7D6;
+    padding: 2rem;
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.destaque{
+    color: #E43A12;
+}
