@@ -1,17 +1,75 @@
-.esquerda{
-    width: 50%;
-    padding: 20px;
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
-.direita{
-    width: 50%;
-    background-color: #FEE7D6;
+.esquerda {
+    width: 50vw;
     padding: 2rem;
-    position: fixed;
-    height: 100vh;
-    overflow: hidden;
+    background-color: white;
+    overflow-y: auto
 }
+
+.direita {
+    width: 50vw;
+    background-color: #FEE7D6;
+    padding: 32px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dentro_direita{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .destaque{
     color: #E43A12;
+}
+
+h2 {
+    font-family: 'Schoolbell', cursive;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+h2 img{
+    margin-right: 0.8rem;
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.recado{
+    color: #57534E;
+    font-size: 16px;
+    margin: 0.8rem 0 3.2;
+}
+
+.galera{
+    width: 496px;
+    height: 368px;
+    margin-top: auto;
+    align-self: center;
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 2.4rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0.8rem 0;
 }
