@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de Matrícula</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form class="formulario">
+      <a href="#" class="voltar">← Voltar</a>
+      <h1>Formulário de matrícula</h1>
+      <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+      
+      <h2>Informações da criança</h2>
+      <label>Nome completo</label>
+      <input type="text" value="Maria Luiza Alves" required>
+
+      <label>Data de nascimento</label>
+      <input type="date" value="2019-05-06" required>
+
+      <label>Sexo</label>
+      <select>
+        <option>Feminino</option>
+        <option>Masculino</option>
+        <option>Outro</option>
+      </select>
+
+      <label>Informações médicas</label>
+      <textarea placeholder="Digite aqui..." class="infomed">Ela tem alergia a glúten</textarea>
+
+      <div class="upload-area" onclick="document.getElementById('upload-input').click();">
+        <img src="/assets/cloud-upload.png" alt="Ícone de upload" />
+        <span>Clique aqui para<br>selecionar arquivos</span>
+        <input type="file" id="upload-input" name="documentos" style="display: none;" multiple>
+      </div>
+
+      <h2>Endereço residencial</h2>
+      <label>CEP</label>
+      <input type="text" value="01234-567">
+
+      <div class="grid">
+        <div>
+          <label>Rua</label>
+          <input type="text" value="Rua das Flores" style="background-color: #E7E5E4; color: #292524" />
+        </div>
+        <div>
+          <label>Número</label>
+          <input type="text" value="123">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <label>Cidade</label>
+          <input type="text" value="São Paulo" style="background-color: #E7E5E4; color: #292524" />
+        </div>
+        <div>
+          <label>Estado</label>
+          <input type="text" value="SP" style="background-color: #E7E5E4; color: #292524" />
+        </div>
+      </div>
+
+      <h2>Informações do responsável</h2>
+      <label>Nome do responsável</label>
+      <input type="text" value="Miguel Roberto Alves">
+
+      <label>Telefone</label>
+      <input type="tel" value="(10) 9 8765-4321">
+
+      <label>E-mail</label>
+      <input type="email" value="papalegal123" class="erro">
+      <span class="erro-msg">✱ Insira um e-mail válido</span>
+    </div>
+</body>
