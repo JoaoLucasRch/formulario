@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de Matrícula</title>
+  <link rel="stylesheet" href="./formulario/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form class="formulario">
+      <a href="#" class="voltar">← Voltar</a>
+      <h1>Formulário de matrícula</h1>
+      <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+      
+      <h2>Informações da criança</h2>
+      <label>Nome completo</label>
+      <input type="text" value="Maria Luiza Alves" required>
+
+      <label>Data de nascimento</label>
+      <input type="date" value="2019-05-06" required>
+
+      <label>Sexo</label>
+      <select>
+        <option>Feminino</option>
+        <option>Masculino</option>
+        <option>Outro</option>
+      </select>
+
+      <label>Informações médicas</label>
+      <textarea placeholder="Digite aqui..." class="infomed">Ela tem alergia a glúten</textarea>
+
+  <div class="upload-area" onclick="document.getElementById('upload-input').click();">
+  <img src="formulario/assets/cloud-upload.png" alt="Ícone de upload" />
+  <span>Clique aqui para<br>selecionar arquivos</span>
+  <input type="file" id="upload-input" name="documentos" style="display: none;" multiple>
+  </div>
+
+    <h2>Endereço residencial</h2>
+    <label>CEP</label>
+    <input type="text" value="01234-567">
+
+    <div class="grid">
+      <div>
+        <label>Rua</label>
+        <input type="text" value="Rua das Flores" style="background-color: #E7E5E4; color: #57534E" />
+      </div>
+      <div>
+        <label style="color: #57534E;" >Número </label>
+        <input type="text" value="123" style="color: #57534E;">
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <label>Cidade</label>
+      <input type="text" value="São Paulo" style="background-color: #E7E5E4; color: #57534E" />
+      </div>
+      <div>
+        <label>Estado</label>
+        <input type="text" value="SP" style="background-color: #E7E5E4; color: #57534E" />
+      </div>
+    </div>
+
+    <h2>Informações do responsável</h2>
+    <label>Nome do responsável</label>
+    <input type="text" value="Miguel Roberto Alves">
+
+    <label>Telefone</label>
+    <input type="tel" value="(10) 9 8765-4321">
+
+    <label>E-mail</label>
+    <input type="email" value="papalegal123" class="erro">
+    <span class="erro-msg">✱ Insira um e-mail válido</span>
+
+    <h2>Opções de matrícula</h2>
+
+    <p>Selecione o turno de estudo</p>
+    <div class="opcao-container">
+
+      <label class="opcao-box">
+        <input type="checkbox" name="atividade" value="manha" />
+          <span class="custom-radio"></span>
+        <input type="radio" name="turno" value="manha" />
+        <img src="/formulario/assets/sun-cloud-02.png" alt="" />
+        <span>Manhã</span>
+      </label>
+
+      <label class="opcao-box">
+        <input type="checkbox" name="atividade" value="tarde" />          
+          <span class="custom-radio"></span>
+        <input type="radio" name="turno" value="tarde" />
+        <img src="/formulario/assets/sun-02.png" alt="" />
+        <span>Tarde</span>
+      </label>
+    </div>
+    
+    <p>Em qual esporte você gostaria de inscrever seu filho?</p>
+    <div class="opcao-container">
+      <label class="opcao-box">
+          <input type="checkbox" name="atividade" value="futebol" />
+          <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="futebol" />
+        <img src="formulario/assets/football.png" alt="Futebol" />
+        <span>Futebol</span>
+      </label>
+
+      <label class="opcao-box">
+        <input type="checkbox" name="atividade" value="basquete" />
+        <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="basquete" />
+        <img src="formulario/assets/basketball-02.png" alt="Basquete" />
+        <span>Basquete</span>
+      </label>
+
+      <label class="opcao-box">
+          <input type="checkbox" name="atividade" value="natacao" />
+          <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="natacao" />
+        <img src="formulario/assets/swimming.png" alt="Natação" />
+        <span>Natação</span>
+      </label>
+
+      <label class="opcao-box">
+          <input type="checkbox" name="atividade" value="yoga" />
+          <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="yoga" />
+        <img src="formulario/assets/yoga-02.png" alt="Yoga" />
+        <span>Yoga</span>
+      </label>
+    </div>
+
+    <div class="opcao-container">
+      <label class="opcao-box">
+        <input type="checkbox" name="atividade" value="volley" />
+          <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="Volley" />
+        <img src="formulario/assets/volleyball.png" alt="Volley" />
+        <span>Volley</span>
+      </label>
+
+      <label class="opcao-box">
+        <input type="checkbox" name="atividade" value="box" />
+        <span class="custom-radio"></span>
+        <input type="radio" name="esporte" value="box" />
+        <img src="formulario/assets/boxing-glove-01.png" alt="Box" />
+        <span>Box</span>
+      </label>
+    </div>
+
+    <div class="termos">
+<label>
+  <input type="checkbox" />
+  <span>
+    Declaro que li e concordo com os
+    <a href="#">Termos e Condições</a> e <br> com a
+    <a href="#">Política de Privacidade</a> da escola Estrela do Amanhã.
+  </span>
+</label>
+</div>
+
+    <div class="botoes">
+      <button type="button">Salvar respostas</button>
+      <button class="submit">Fazer matrícula</button>
+    </div>
+  </form>
+
+  <div class="lateral">
+          <div class="dentro_direita">
+              <h2><img src="formulario/assets/estrela.png" alt="">Estrelas do Amanhã</h2>
+              <h1>Porque cada momento <br> de <span class="destaque">aprendizado</span> conta</h1>
+              <p class="recado">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+              <img class="galera" src="formulario/assets/Illustration.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
