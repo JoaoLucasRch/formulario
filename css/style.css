@@ -67,6 +67,40 @@ textarea {
   font-size: 12px;
 }
 
+.upload-area {
+  padding: 30px 20px;
+  margin-top: 8px;
+  border: 2px dashed #ccc;
+  text-align: center;
+  color: #999;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-area img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.upload-area span {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.grid {
+  display: flex;
+  gap: 10px;
+}
+
+.grid > div {
+  flex: 1;
+}
+
 .esquerda {
     width: 50vw;
     padding: 2rem;
