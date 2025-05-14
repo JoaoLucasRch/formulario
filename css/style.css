@@ -16,6 +16,57 @@ html, body {
     height: 100vh;
 }
 
+.formulario {
+  width: 55%; 
+  height: 100%;
+  overflow-y: auto; 
+  padding: 40px 60px;
+  background-color: #fff;
+}
+
+.formulario h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.formulario h2 {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.formulario a, p {
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.erro {
+  border: 1px solid red;
+}
+
+.erro-msg {
+  color: red;
+  font-size: 12px;
+}
+
 .esquerda {
     width: 50vw;
     padding: 2rem;
